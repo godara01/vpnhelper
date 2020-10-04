@@ -27,11 +27,11 @@ def get_password(username):
     match = RE_PASS.search(html)
     if match:
         passw = match.groups()[1]
-    
+
     return passw.strip() if passw else None
 
 def get_vpn_status():
-     """
+    """
     Get the status of FreeVPN Servers
     It scrapes the FreeVPN website for server status and details.
 
